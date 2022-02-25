@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --pink:#FFC0CB;
+}
+
+/* 设置每个标题的字体样式表现形式 */
+*{    
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+/* 设置字体大小 */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.7rem;
+}
+
+/* 标题框的背景颜色 */
+html::-webkit-scrollbar-track{
+    background:#fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--pink);
+}
+
+body{
+    background:#eee;
+    padding-right: 5rem;
+}
+
+section{
+    padding:2rem 9%;
+    min-height: 100vh;
+}
+
+/* 标题字体样式 */
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#222;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--pink);
+}
+
+/* 按钮形式 */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:#FFC0CB;
+    color:#222;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* 点击按钮之后的颜色 */
+.btn:hover{
+    background:var(--pink);
+    letter-spacing: .2rem;
+}
+
+/* 将标题部分设置在右侧 */
+header{
+    position: fixed;
+    top:0; right:0;
+    min-height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    z-index: 1000;
+}
+
+/* 将标题的展现形式变为垂直，单排 */
+header .navbar{
+    writing-mode: vertical-lr;
+    padding:1.5rem;
+}
+/* 标题字体颜色及距离 */
+header .navbar a{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#222;
+}
+/* 动态效果，鼠标触碰式展示绿色 */
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+/* 设置菜单栏小图标的大小背景等展现形式 */
+#menu-bars{
+    position: fixed;
+    z-index: 10000;
+    top:1rem; left:1rem;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+    color:#fff;
+    background: var(--pink);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+/* 以下设置home部分 */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 改变动态显示样式范围 */
+.home #particles-js{
+    position: absolute;
+    top:0; left:0;
+    height:100%;
+    width:100%;
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height:100%;
+    width:100%;
+}
+
+/* 文字内容样式 */
+.home .content{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* 图片样式 */
+.home .content img{
+    height: 40rem;
+    width:30rem;
+    border-radius: 25% 10%;
+    object-fit: cover;
+    border:1rem solid var(--pink);
+}
+
+/* 各种标题内容形式 */
+.home .content h3{
+    font-size: 4rem;
+    color:#222;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color:var(--pink);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    color:#222;
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+/* 以下设置wardrobe部分 */
+.wardrobe .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+/* 图片位置 比例 */
+.wardrobe .row .image{
+    text-align: center;
+    flex:1 1 25rem;
+}
+/* 图片大小边框等设置 */
+.wardrobe .row .image img{
+    width:40rem;
+    height:30rem;
+    border-radius: .5rem;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* 内容文字设置 */
+.wardrobe .row .content{
+    flex:1 1 55rem;
+}
+
+.wardrobe .row .content h3{
+    color:#222;
+    font-size: 4rem;
+}
+
+.wardrobe .row .content h3 span{
+    color:var(--pink);
+}
+
+.wardrobe .row .content .info{
+    color:#333;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 2;
+}
+
+/* 表格设置 */
+.wardrobe .row .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding:1rem 0;
+}
+
+.wardrobe .row .content .box-container .box{
+    flex:1 1 20rem;
+}
+
+.wardrobe .row .content .box-container .box p{
+    font-size: 1.7rem;
+    color:#222;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+.wardrobe .row .content .box-container .box p span{
+    color:var(--pink);
+}
+
+/* 以下为brand 设置，表格排列形式，图标文字显示形式 */
+.brand .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.brand .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    background:#FFFAF0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem;
+    text-align: center;
+}
+
+.brand .box-container .box i{
+    color:var(--pink);
+    font-size: 5rem;
+    padding:1rem 0;
+}
+
+.brand .box-container .box h3{
+    color:#222;
+    font-size: 2.5rem;
+    padding-top:1rem;
+}
+
+.brand .box-container .box p{
+    color:#333;
+    font-size:1.7rem;
+    padding:1rem 0;
+    line-height: 2;
+}
+
+/* 设置inspiration部分 */
+.picture .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+/* 排列表格框 */
+.picture .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:1rem solid #E6E6FA;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    overflow:hidden;
+    height:30rem;
+}
+/* 调整图片适应表格 */
+.picture .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+/* 设置按钮悬浮点亮样式 */
+.picture .box-container .box .content{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0; left:-100%;
+    background:#fff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture .box-container .box:hover .content{
+    left:0;
+}
+
+/* 添加图片上传按钮部分 */
+/*隐藏原input*/
+.picture .upload-btn {
+	display: none;
+}
+/*美化自定义按钮*/
+.picture .file-input-trigger {
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid #E6E6FA;
+    background-color: #FFC0CB;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+}
+
+
+
+/* 以下是blog部分，同上设置表格排列，文字图片形式 */
+.blogs .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.blogs .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    background:#F0FFFF;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem;
+}
+
+.blogs .box-container .box img{
+    height:45rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.blogs .box-container .box h3{
+    color:var(--pink);
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.blogs .box-container .box p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+}
+
+/* 添加图片 */
+/*隐藏原input*/
+.blogs .upload-btn {
+	display: none;
+}
+/*美化自定义按钮*/
+.blogs .file-input-trigger {
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid #E6E6FA;
+    background-color: #FFC0CB;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* drawing */
+.drawing .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+/* 排列表格框 */
+.drawing .container .image-container{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:1rem solid #E6E6FA;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    overflow:hidden;
+    height:30rem;
+}
+
+/* 调整图片适应表格 */
+.drawing .container .image-container img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.drawing .container .image-container:hover img{
+    transform: scale(1.1);
+}
+.drawing .popup-image{
+    position: fixed;
+    top: 10px;left: 10px;
+    background: rgba(0,0,0,.9);
+    height: 90%;
+    width: 90%;
+    z-index: 100;
+    display: none;
+}
+.drawing .popup-image span{
+    position: absolute;
+    top: 0;right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.drawing .popup-image img{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #FFC0CB;
+    width: 600px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* 以下是登录注册界面，接下来要进行修改 */
+
+
+/* 最底部声明样式 */
+.footer{
+    padding:2.5rem;
+    font-size: 2rem;
+    color:#666;
+    background:#fff;
+    text-align: center;
+}
+
+.footer span{
+    color:var(--pink);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries   随意将网页进行缩放，适应电脑或者手机屏幕大小 */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    body{
+        padding-right: 0;
+    }
+    
+    /* 每个部分与左上的距离 */
+    section{
+        padding:2rem;
+    }
+
+    /* 动态设置菜单图标形式 */
+    header{
+        width:100%;
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    /* 适应为位于左上角 */
+    #menu-bars{
+        display: initial;
+    }
+
+    /* 缩小后，标题部分又适应为水平形式 */
+    header .navbar{
+        writing-mode: horizontal-tb;
+    }
+
+    header .navbar a{
+        display: block;
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    /* 标题适应页面 */
+    .heading{
+        font-size: 4rem;
+    }
+
+    /* contact适应界面，要修改！！ */
+    .contact .row form .inputBox input{
+        width:100%;
+    }
+
+    /* 弹出图片适应页面 */
+    .drawing .popup-image img{
+        width: 90%;
+    }
+
+}
+
+
+/* 编辑按钮添加文字 */
+/* 编辑按钮的绿色边框 */
+/* .blogs .box-container .box .edit_border{
+	display: inline-block;
+	width: 94px;
+	height: 20px;
+	line-height: 16px;
+	color: #03C28C;
+	border-radius: 4px;
+	border: 1px solid #03C28C;
+	background-color: #FFFFFF;
+} */
+/* 保存按钮的样式 */
+/* .blogs .box-container .box .edit_bordered{
+	color: #FFFFFF;
+	background-color: #03C28C;
+} */
+/* 内容不可编辑的按钮 */
+/* .blogs .box-container .box .edit_contain{ */
+	/* display: inline-block;
+	width:94px;
+	font-size: 14px;
+	text-align: left;
+	line-height: 16px;
+	border-radius: 4px;
+	padding: 4px 7px;
+	margin-top: 4px;
+	resize:none;
+	overflow:hidden;
+	color: #333333;
+	background-color: #EFEFF4;
+	border:1px solid #EFEFF4;
+} */
+/* 内容可编辑的样式 */
+/* .blogs.box-container.box .edit_contained{
+	background: none;
+	color: #333333;
+	resize:none;
+	border:1px solid #03C28C;
+} */

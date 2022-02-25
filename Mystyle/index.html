@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Style</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+     <!-- 添加菜单栏小图标 -->
+    <div id="menu-bars" class="fas fa-bars"></div>     
+
+    <nav class="navbar">      
+        <a href="#home">home</a>
+        <a href="#wardrobe">wardrobe</a>
+        <a href="#brand ">brand</a>
+        <a href="#picture">picture</a>
+        <a href="#blogs">blogs</a>
+        <!-- 单独需要添加修改的部分！！ -->
+        <a href="#drawing">drawing</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <!-- 将动态显示样式放在主页 -->
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="img/home-pic.jpg" alt="">
+        <h3> MY <span>STYLE</span> </h3>
+        <p> welcome to  <span class="typing-text"> front end developer </span> </p>
+        <!-- <a href="#wardrobe" class="btn">login</a>  -->
+        <a href="login.html" class="btn">login</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- wardrobe section starts  后期要修改的地方-->
+
+<section class="wardrobe" id="wardrobe">
+
+    <h1 class="heading"> my <span>wardrobe</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="img/wardrobe-pic.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3> 衣柜 <span> 理念 </span> </h3>
+            <p class="info">穿衣第一要则是舒适，第二要则是适合自己，做到“人穿衣“。喜欢设置简洁大方的衣服，不限制自身活动的，舒适方便的衣服。</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> T恤: </span> 5 </p>
+                    <p> <span> 衬衫: </span> 5 </p>
+                    <p> <span> 牛仔裤  : </span> 6 </p>
+                    <p> <span> 休闲裤 : </span> 4 </p>
+                </div>
+                <div class="box">
+                    <p> <span> 外套 : </span> 7 </p>
+                    <p> <span> 鞋子 : </span> 6 </p>
+                    <p> <span> 配饰 : </span> 10 </p>
+                    <p> <span> 裙子 : </span> 8 </p>
+                </div>
+            </div>
+            <a href="windex.html" class="btn">see details</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- wardrobe section ends -->
+
+<!-- brand section starts  后期修改品牌图标，点击进入链接 -->
+
+<section class="brand" id="brand">
+
+    <h1 class="heading"> <span> my </span> brand </h1>
+
+    <div class="box-container">
+
+        <!-- 加入tilt使得鼠标触碰时有倾斜效果 -->
+        <div class="box tilt">
+            <i class= "fa fa-key"></i>
+            <a href="http://www.urbanic30.com/" ><h3>URBANIC30</h3></a>
+            <p>简约复古法式风格，本季灵感来源为法国电影导演Eric Rohmer的作品.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fa fa-anchor"></i>
+            <h3>nothing written</h3>
+            <p>品牌信念：nothing is written in stone。主打冷淡色调简约风服装 .</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fa fa-adjust"></i>
+            <h3>ELBORN</h3>
+            <p>ELBORN is a fashion brand founded in 2016 by Eunjin Do in Barcelona.
+                Focusing on women's wear, ELBORN creates unique pieces through selection of quality fabrics, fine materials and elegant silhouettes..</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="	fa fa-balance-scale"></i>
+            <h3>3hreeto8ight</h3>
+            <p>3hreeto8ighty 的名字来源于韩国习语，3 岁 时养成的习惯到 80 岁时还会影响着我们。
+                所以整个品牌的风格就是长久耐看型，设计出可持续使用、不过时的产品。希望把经典简约的设计适用于生活的各个场合。.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fa fa-beer"></i>
+            <h3>LEROBE</h3>
+            <p>We are always considering about long-lasting clothing in your daily life.
+                In the fast-changing trend, we respect our senses.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fa fa-camera-retro"></i>
+            <h3>depound</h3>
+            <p>the interest of founders in travel,art and architecture has turned depound into a multi-faced brand offering fashion items.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- brand section ends -->
+
+<!-- picture section starts  -->
+
+<section class="picture" id="picture">
+
+    <h1 class="heading"> <span> my </span> picture </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <img src="img/img-1.jpg" alt="">
+            <div class="content">
+                <!-- <a href="#" class="btn">learn more</a> -->
+                <button type="button" class="btn">learn more</button>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/img-2.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/img-3.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/img-4.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/img-5.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/img-6.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+      <!-- 图片上传按钮 -->
+
+      <div class="add-btn">
+        <input type="file" class="upload-btn">
+        <span type="text" class="file-input-trigger">选择图片</span>
+        <p class="file-name"></p>
+      </div> 
+
+    </div>
+<!-- 点击按钮弹出图片详情  一些失败！！！！！！！-->
+    <!-- <div class="popup-image">
+        <span>&times;</span>
+        <img src="img/img-1.jpg" alt="">
+
+    </div> -->
+    
+</section>
+
+<!-- picture section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span> my </span> blogs </h1>
+
+    <div class="box-container">
+        
+        <div class="box tilt">
+            <img src="img/blog-img-1.jpg" alt="">
+            <h3> colors inspiration </h3>
+            <p>蓝色上衣：牛仔衬衫或者纯棉衬衫，搭配军绿色直筒裤，同时增加帅气优雅的感觉</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/blog-img-2.jpg" alt="">
+            <h3> 配饰妙用 </h3>
+            <p>金色简约圆形耳环搭配度极高，永远不过时，但是要注意圆圈的大小，3~4cm应该是最合适的，珍珠项链可以给平淡的衣服增加优雅感，珍珠耳环同理</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="img/blog-img-3.jpg" alt="">
+            <h3> shoes inspiration </h3>
+            <p>一字带丝绒玛丽珍给整体造型增加优雅的感觉，同时搭配袜子的颜色不同，风格也随之变化，可以从白袜子适应起</p>
+            <a href="#" class="btn">learn more</a>
+            <!-- 编辑文字部分 失败！！！！！！！！！！ -->
+            <!-- <button class="edit_border">编辑</button> -->
+            <!-- <textarea  class="edit_contain" placeholder="请输入内容" value="" disabled="disabled"></textarea> -->
+
+        </div>
+
+        <!-- 图片上传按钮 -->
+        <div>
+            <input type="file" class="upload-btn">
+            <span type="text" class="file-input-trigger">选择图片</span>
+            <p class="file-name"></p>
+        </div>
+      
+    
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- drawing section starts   要修改的部分！！ -->
+<section class="drawing" id="drawing">
+    <h1 class="heading"> <span> drawing </span> inspiration </h1>
+
+    <div class="container">
+
+        <div class="image-container">
+                <img src="img/image-1.jpg" alt="">
+        </div>
+
+        <div class="image-container">
+            <img src="img/image-2.jpg" alt="">
+        </div>
+
+        <div class="image-container">
+            <img src="img/image-3.jpg" alt="">
+        </div>
+        <div class="image-container">
+            <img src="img/image-4.jpg" alt="">
+        </div>
+        <div class="image-container">
+            <img src="img/image-5.jpg" alt="">
+        </div>
+        <div class="image-container">
+            <img src="img/image-6.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="popup-image">
+        <span> &times;</span>
+        <img src="img/image-1.jpg" alt="">
+
+    </div>
+
+    </div>
+
+
+    
+
+</section>
+
+
+
+<!-- drawing section ends -->
+
+
+<!-- footer section  -->
+
+<div class="footer"> created by <span> Cici Lee </span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  打印文字的展示形式链接 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  动态显示样式-->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  图片动态样式-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<!--添加图片 先引入jquery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+// 菜单图标可点击
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+// 文字单个打印循环展示形式
+var typed = new Typed('.typing-text', {
+    strings : ['front end developer', 'my style', 'graphic designer', 'my style'],
+    loop : true,
+    typeSpeed : 150
+});
+
+// 鼠标触碰图片会倾斜
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+// 添加图片的部分
+$(function() {
+	// 点击自定义的span标签触发input标签的点击事件
+    $('.file-input-trigger').on('click', function() {
+        $('.upload-btn').trigger('click')
+    })
+    // 文件改变时 将文件名称显示到p元素中
+    $('.upload-btn').on('change', function(event) {
+        var fileName = '已选文件：' + event.target.files[0].name
+        $('.file-name').text(fileName)
+    })
+})
+
+// 图片弹出成功啦！！！！！！！！！！！！！
+document.querySelectorAll('.image-container img').forEach(img=>{
+    img.onclick = () =>{
+        document.querySelector('.popup-image').style.display ='block';
+        document.querySelector('.popup-image img').src = img.getAttribute('src');
+    }
+
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display ='none';
+}
+
+
+
+// 编辑文字部分 失败！！！！！！
+
+	// var btns=document.getElementsByClassName("edit_border");
+	// var texts = document.getElementsByTagName("textarea");
+	// window.onload = function(){
+	// 	//点击编辑按钮，编辑按钮变为保存按钮
+	// 	for(var a = 0;a< btns.length;a++){
+	// 		btns[a].index = a;
+	// 		$(btns[a]).click(function() {
+	// 			if($(this).text() == '编辑') {
+	// 				$(this).text('保存');
+	// 				$(this).addClass("edit_bordered").siblings().attr("disabled", false).addClass('edit_contained').text('')
+	// 			}else {
+	// 				$(this).text('编辑');
+	// 				$(this).removeClass("edit_bordered").siblings().attr("disabled", true).removeClass('edit_contained');
+	// 			}
+	// 		})
+	// 	}
+	// }
+
+
+
+</script>
+
+</body>
+</html>
